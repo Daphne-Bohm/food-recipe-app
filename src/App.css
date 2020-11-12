@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li{
+  list-style-type: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a{
   color: white;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.app{
+  text-align: center;
+  min-height: 100vh;
+  padding-top: 50px;
+  width: 80%;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+form{
+  margin-top: 20px;
+}
+
+.search-bar{
+  width: 50%;
+  border: none;
+  padding: 10px;
+  background-color: white;
+  outline: none;
+}
+
+.search-button{
+  padding: 10px 20px;
+  border: none;
+  background-color: lightcoral;
+  color: white;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.search-button:hover{
+    background-color: rgb(180, 87, 87);
+}
+
+.recipes{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+@media (max-width: 992px) { 
+  .recipes{
+    grid-template-columns: 1fr;
   }
 }
